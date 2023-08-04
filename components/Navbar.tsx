@@ -8,7 +8,7 @@ import logo from "../public/logo.png";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white border-gray-200 ">
+    <nav className="bg-white border-gray-200 sticky" id="navbar__custom">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
           <p className="text-xl text-black font-bold">HI-TECH Barbershop</p>

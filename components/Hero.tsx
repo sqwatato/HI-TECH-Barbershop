@@ -4,9 +4,9 @@
 
 export default function Hero() {
   return (
-    <div className="flex flex-row flex-wrap bg-orange-100 p-12 sm:p-12 md:p-24 lg:px-48 gap-12">
+    <div className="flex flex-row flex-wrap bg-orange-100 p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in">
       <div className="md:basis-1/2">
-        <h1 className="text-4xl md:text-5xl font-light text-black">
+        <h1 className="text-4xl md:text-5xl font-light text-black" id="intro-text">
           Razor shaves, scissor and clipper cuts for all kinds of hair!
         </h1>
         <p className="text-black py-3">
@@ -14,7 +14,7 @@ export default function Hero() {
           wide range of services to help you look and feel your best, from
           stylish haircuts to expert beard grooming.
         </p>
-        <button type="button" className="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900">orange</button>
+        <button type="button" className="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900" id="get-started-button">Get Started <i className="right-arrow"></i></button>
       </div>
       <div className="md:basis-2/5 w-full max-md:py-8 md:py-0">
         <div className="flex items-center justify-center w-full h-48 bg-gray-300 rounded dark:bg-gray-700">

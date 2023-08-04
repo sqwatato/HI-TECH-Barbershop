@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
@@ -18,10 +19,94 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  /* Fade in Animation */
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+/* Navbar Styling */
+#navbar__custom {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Right Arrow Styling */
+.right-arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Intro Text */
+#intro__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Get Started Button */
+#get-started-button{
+  /* Wiggling Animation */
+  -webkit-animation: btnWiggle 4s infinite;
+  -moz-animation: btnWiggle 4s infinite;
+  -o-animation: btnWiggle 4s infinite;
+  animation: btnWiggle 4s infinite;
+}
+
+/* Wiggling Animation Keyframes */
+@-webkit-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-3deg);}
+	4% {-webkit-transform: rotate(3deg);}
+	5% {-webkit-transform: rotate(0deg);}
+  7% {-webkit-transform: rotate(-3deg);}
+	9% {-webkit-transform: rotate(3deg);}
+	10% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@-o-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-3deg);}
+	4% {-webkit-transform: rotate(3deg);}
+	5% {-webkit-transform: rotate(0deg);}
+  7% {-webkit-transform: rotate(-3deg);}
+	9% {-webkit-transform: rotate(3deg);}
+	10% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-3deg);}
+	4% {-webkit-transform: rotate(3deg);}
+	5% {-webkit-transform: rotate(0deg);}
+  7% {-webkit-transform: rotate(-3deg);}
+	9% {-webkit-transform: rotate(3deg);}
+	10% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
 }
