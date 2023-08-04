@@ -2,9 +2,9 @@
  * Reviews
  */
 
-const Reviews = () => {
+export default function Reviews() {
     return (
-        <div className="bg-white flex flex-wrap">
+        <div className="bg-gray flex flex-wrap">
 
         </div>
     )

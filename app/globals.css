@@ -43,13 +43,29 @@ body {
    }
 }
 
-
 /* Navbar Styling */
 #navbar__custom {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Navbar: Contact */
+#navbar__contact {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 450;
+}
+
+/* Navbar Elements */
+.navbar__elements {
+  margin-top: 3px;
 }
 
 /* Right Arrow Styling */
