@@ -45,7 +45,8 @@ body {
 
 /* Navbar Styling */
 #navbar__custom {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*Box Shadow*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-top: 3px;
