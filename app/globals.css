@@ -47,9 +47,8 @@ body {
 #navbar__custom {
   /*Box Shadow*/
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding-top: 7px;
+  padding-top: 10px;
   padding-bottom: 7px;
-  margin-top: 3px;
   margin-bottom: 3px;
 }
 
@@ -79,12 +78,24 @@ body {
   -webkit-transform: rotate(-45deg);
 }
 
+.arrow-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Intro Container */
+#intro-container {
+  background-color: #ffd7b5;
+}
+
 /* Intro Text */
-#intro__text {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-  margin-bottom: 1rem;
+.main-font {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Get Started Button */
@@ -127,3 +138,33 @@ body {
 	10% {-webkit-transform: rotate(0deg);}
 	100% {-webkit-transform: rotate(0deg);}
 }
+
+/* Reviews Container */
+.reviews {
+  background-color: #2C2D2F;
+}
+
+#reviews-text {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.arrows {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Review Cards */
+#review-panel {
+  width: 80%;
+  height: 100%;
+}
+
+/*Nice color for another section::after
+background-color: #F0F2F7;
+*/

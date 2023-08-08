@@ -5,9 +5,9 @@
 export default function Hero() {
   return (
     <section className="">
-      <div className="flex flex-row flex-wrap bg-orange-100 p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in">
+      <div className="flex flex-row flex-wrap p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in" id="intro-container">
         <div className="md:basis-1/2">
-          <h1 className="text-4xl md:text-5xl font-light text-black" id="intro-text">
+          <h1 className="text-4xl md:text-5xl font-light text-black main-font">
             Razor shaves, scissor and clipper cuts for all kinds of hair!
           </h1>
           <p className="text-black py-3">

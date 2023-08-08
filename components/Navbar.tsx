@@ -8,7 +8,7 @@ import logo from "../public/logo.png";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white border-gray-200" id="navbar__custom">
+    <nav className="border-gray-200" id="navbar__custom">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
           <p className="text-xl text-black font-bold">HI-TECH Barbershop</p>
@@ -37,8 +37,8 @@ export default function Navbar() {
             />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-light flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  ">
+        <div className="hidden w-full md:block md:w-auto " id="navbar-default">
+          <ul className="font-light flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
             <li>
               <Link
                 href="#"
