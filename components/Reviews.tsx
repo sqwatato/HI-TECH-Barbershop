@@ -4,9 +4,9 @@ import { useState } from "react";
 export default function Reviews() {
 
   let reviews = [
-    {name: "Viv B.", stars: "5 Stars", source: "Yelp", review: "Best barber I've had 100% no doubt trust me. Great skills. Master of his craft. Very sociable."},
-    {name: "Vinay S.", stars: "5 Stars", source: "Yelp", review: "Been going to Rod since before 2015. He's a great barber and that is rare these days. Once you get a good haircut, you can never go back to anything else. I'm glad I was able to discover him, and experience the skills he has to offer which includes years of experience and a master of art..."},
-    {name: "Mahasvin", stars: "4 Stars", source: "Yelp", review: "Test Review 1"},
+    {name: "Viv B.", stars: 5, source: "Yelp", review: "Best barber I've had 100% no doubt trust me. Great skills. Master of his craft. Very sociable."},
+    {name: "Vinay S.", stars: 5, source: "Yelp", review: "Been going to Rod since before 2015. He's a great barber and that is rare these days. Once you get a good haircut, you can never go back to anything else. I'm glad I was able to discover him, and experience the skills he has to offer which includes years of experience and a master of art..."},
+    {name: "Mahasvin", stars: 4, source: "Yelp", review: "Test Review 1"},
   ]
   
   let [currentReview, setCurrentReview] = useState(0);
@@ -30,11 +30,35 @@ export default function Reviews() {
     console.log(`Length: ${reviews.length}`);
   };
 
+  function createStar() {
+    return (
+      <svg
+        className="h-4 w-4 fill-current text-yellow-500"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12 2.5L9.09 8.5H2.5L7.18 12.84L5.09 18.5L12 14.5L18.91 18.5L16.82 12.84L21.5 8.5H14.91L12 2.5Z"
+        />
+      </svg>
+    )
+  }
+
+  function returnStars(stars) {
+    const starElements = [];
+    for (let i = 0; i < reviews[currentReview].stars; i++) {
+      starElements.push(createStar());
+    }
+    return starElements;
+  }
+
+
   return (
     <div className="flex flex-column flex-wrap justify-center p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in reviews">
       <div id="reviews-text">
         <h1 className="text-4xl md:text-5xl font-light main-font text-white">
-          What our customers are saying...
+          Reviews
         </h1>
       </div>
 
@@ -69,29 +93,8 @@ export default function Reviews() {
                 <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
                   <circle cx="1" cy="1" r="1" />
                 </svg>
-                <div>
-                {
-                  // This is a hacky way to do this, but it works.
-                  // I'm not sure how to do this with a for loop.
-                  // I'm also not sure how to do this with a map function.
-                  // I'm also not sure how to do this with a forEach function.
-                  // I'm also not sure how to do this with a for...in loop.
-                  // I'm also not sure how to do this with a for...of loop.
-                  // I'm also not sure how to do this with a while loop.
-                  // I'm also not sure how to do this with a do...while loop.
-
-                  <svg
-                      key={index}
-                      className="h-4 w-4 fill-current text-yellow-500"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2.5L9.09 8.5H2.5L7.18 12.84L5.09 18.5L12 14.5L18.91 18.5L16.82 12.84L21.5 8.5H14.91L12 2.5Z"
-                      />
-                    </svg>
-                }
+                <div className="flex flex-row">
+                  {returnStars(reviews[currentReview].stars)}
                 </div>
               </div>
             </figcaption>
