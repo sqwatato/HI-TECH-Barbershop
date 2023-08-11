@@ -1,12 +1,12 @@
 'use client'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hero from "@/components/Hero"
-import Reviews from "@/components/Reviews"
-import About from "@/components/About"
-import Services from "@/components/Services"
-import Gallery from "@/components/Gallery"
-import Contact from "@/components/Contact"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Hero from "@/components/Hero";
+import Reviews from "@/components/Reviews";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Gallery from "@/components/Gallery";
+import Contact from "@/components/Contact";
 
 const images = [
   'https://s3-media0.fl.yelpcdn.com/bphoto/ls_Ml2tMKMV7U_CAp5jBFg/348s.jpg',
@@ -20,6 +20,7 @@ const images = [
   'https://s3-media0.fl.yelpcdn.com/bphoto/v_Rl4wZtWA1bwfy5zUqFwA/348s.jpg',
 ];
 
+
 export default function Home() {
   return (
     <main className="">
@@ -31,4 +32,4 @@ export default function Home() {
       <Contact />
     </main>
   )
-}
+};

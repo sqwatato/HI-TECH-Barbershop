@@ -6,7 +6,7 @@ interface GalleryProps {
 
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-900 to-blue-800">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-900 to-blue-800 custom-hidden">
       <h1 className="text-4xl md:text-5xl font-light main-font text-white p-6 text-center">
         Reviews
       </h1>

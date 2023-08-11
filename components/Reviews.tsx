@@ -59,56 +59,58 @@ export default function Reviews() {
 
 
   return (
-    <div className="flex flex-column flex-wrap justify-center p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in reviews">
-      <div id="reviews-text">
-        <h1 className="text-4xl md:text-5xl font-light main-font text-white">
-          Reviews
-        </h1>
-      </div>
-
-      <br />
-
-      <div className="flex flex-row flex-wrap justify-center gap-12 arrows">
-        <button className="arrow-button" onClick={() => changeReview("left")}>&lt;</button>
-      </div>
-
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8 rounded-lg" id="review-panel">
-        <div className="absolute inset-0 -z-10 bg-gradient-radial from-indigo-100 to-white opacity-20"></div>
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-              <p>
-              {reviews[currentReview].review}
-              </p>
-            </blockquote>
-            <figcaption className="mt-10">
-              <img
-                className="mx-auto h-10 w-10 rounded-full"
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt="User Avatar"
-              />
-              <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-900">{reviews[currentReview].name}</div>
-                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                  <circle cx="1" cy="1" r="1" />
-                </svg>
-                <div className="text-gray-600">{reviews[currentReview].source}</div>
-                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                  <circle cx="1" cy="1" r="1" />
-                </svg>
-                <div className="flex flex-row">
-                  {returnStars(reviews[currentReview].stars)}
-                </div>
-              </div>
-            </figcaption>
-          </figure>
+    <section className="custom-hidden">
+      <div className="flex flex-column flex-wrap justify-center p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in reviews">
+        <div id="reviews-text">
+          <h1 className="text-4xl md:text-5xl font-light main-font text-white">
+            Reviews
+          </h1>
         </div>
-      </section>
 
-      <div className="flex flex-row flex-wrap justify-center gap-12 arrows">
-        <button className="arrow-button" onClick={() => changeReview("right")}>&gt;</button>
+        <br />
+
+        <div className="flex flex-row flex-wrap justify-center gap-12 arrows">
+          <button className="arrow-button" onClick={() => changeReview("left")}>&lt;</button>
+        </div>
+
+        <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8 rounded-lg" id="review-panel">
+          <div className="absolute inset-0 -z-10 bg-gradient-radial from-indigo-100 to-white opacity-20"></div>
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+          <div className="mx-auto max-w-2xl lg:max-w-4xl">
+            <figure className="mt-10">
+              <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                <p>
+                {reviews[currentReview].review}
+                </p>
+              </blockquote>
+              <figcaption className="mt-10">
+                <img
+                  className="mx-auto h-10 w-10 rounded-full"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="User Avatar"
+                />
+                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                  <div className="font-semibold text-gray-900">{reviews[currentReview].name}</div>
+                  <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
+                    <circle cx="1" cy="1" r="1" />
+                  </svg>
+                  <div className="text-gray-600">{reviews[currentReview].source}</div>
+                  <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
+                    <circle cx="1" cy="1" r="1" />
+                  </svg>
+                  <div className="flex flex-row">
+                    {returnStars(reviews[currentReview].stars)}
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <div className="flex flex-row flex-wrap justify-center gap-12 arrows">
+          <button className="arrow-button" onClick={() => changeReview("right")}>&gt;</button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
