@@ -183,7 +183,6 @@ body {
 
 /* About Section Contianer*/
 #about-container {
-  background-color: #ee4d4d;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -231,11 +230,12 @@ body {
   justify-content: center;
 }
 
+/*
 .custom-hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s; /* Added 's' after 1 for seconds */
+  transition: all 1s;
 }
 
 .show {
@@ -249,3 +249,4 @@ body {
     transition: none;
   }
 }
+*/

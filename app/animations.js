@@ -1,3 +1,4 @@
+/*
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     console.log(entry);
@@ -14,3 +15,4 @@ const hiddenElements = document.querySelectorAll(".custom-hidden");
 hiddenElements.forEach((element) => {
   observer.observe(element);
 });
+*/

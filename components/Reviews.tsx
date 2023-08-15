@@ -60,7 +60,7 @@ export default function Reviews() {
 
   return (
     <section className="custom-hidden">
-      <div className="flex flex-column flex-wrap justify-center p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in reviews">
+      <div className="flex flex-column flex-wrap justify-center p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in bg-gray-900 pb-40">
         <div id="reviews-text">
           <h1 className="text-4xl md:text-5xl font-light main-font text-white">
             Reviews
