@@ -14,7 +14,7 @@ export default function Contact() {
           Let us know!
         </p> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
+          <div className="text-center">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
               Contact Us
             </h2>
