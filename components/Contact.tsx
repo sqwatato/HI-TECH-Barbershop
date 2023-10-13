@@ -4,7 +4,7 @@
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 export default function Contact() {
   return (
-    <section className="bg-gray-900 custom-hidden">
+    <section className="bg-gray-900 custom-hidden" id="contact">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md h-full pb-40">
         {/* <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Contact Us

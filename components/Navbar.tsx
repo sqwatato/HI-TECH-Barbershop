@@ -8,7 +8,7 @@ import logo from "../public/logo.png";
 
 export default function Navbar() {
   return (
-    <nav className="border-gray-200" id="navbar__custom">
+    <nav className="border-gray-200" id="navbar__custom" >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
           <p className="text-xl text-black font-bold">HI-TECH Barbershop</p>
@@ -41,7 +41,7 @@ export default function Navbar() {
           <ul className="font-light flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
             <li>
               <Link
-                href="#"
+                href="#navbar__custom"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:text-white md:dark:hover:bg-transparent navbar__elements"
                 aria-current="page"
               >
@@ -50,23 +50,23 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="#about"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:text-white md:dark:hover:bg-transparent navbar__elements"
               >
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="#"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:text-white md:dark:hover:bg-transparent navbar__elements"
               >
                 Services
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                href="#"
+                href="#reviews"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:text-white md:dark:hover:bg-transparent navbar__elements"
               >
                 Reviews
@@ -74,7 +74,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="#gallery"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:text-white md:dark:hover:bg-transparent navbar__elements"
               >
                 Gallery
@@ -82,7 +82,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="#contact"
                 className="block py-2 pl-3 pr-4 text-white-900 rounded hover:bg-gray-100 md:border-0 md:hover:text-white-700 md:p-0 md:dark:hover:text-white-500 dark:hover:text-white md:dark:hover:bg-orange-500 bg-orange-400 rounded-full "
                 id="navbar__contact"
               >

@@ -4,7 +4,7 @@
 
 export default function About() {
   return (
-    <section className="custom-hidden">
+    <section className="custom-hidden" id="about">
       <div className="p-6 sm:p-12 bg-gray-900 text-white" id="about-container">
       <div className="flex flex-row space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
         <img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="" className="self-center flex-shrink-0 w-100 h-100 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-700" id="about-pfp"/>

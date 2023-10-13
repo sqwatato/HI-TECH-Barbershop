@@ -4,7 +4,7 @@
 
 export default function Hero() {
   return (
-    <section className="custom-hidden">
+    <section className="custom-hidden" id="hero">
       <div className="flex flex-row flex-wrap p-12 sm:p-12 md:p-24 lg:px-48 gap-12 fade-in" id="intro-container">
         <div className="md:basis-1/2">
           <h1 className="text-4xl md:text-5xl font-light text-black main-font">
